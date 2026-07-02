@@ -1,0 +1,45 @@
+.footer {
+    background: #262522;
+    border-radius: 32px;
+    padding: 30px 40px 24px;
+    gap: 15px;
+}
+
+.Menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 25px;
+    background-color: transparent;
+}
+
+.Menu a {
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    color: #F0EBE1;
+    line-height: 100%;
+    background-color: transparent;
+    letter-spacing: 0;
+}
+
+.Menu a:hover {
+    cursor: pointer;
+
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: rgba(255,255,255,.08);
+    margin-bottom: 18px;
+}
+
+.Copyright {
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    line-height: 120%;
+    color: #7b7b7b;
+    text-transform: uppercase;
+    background-color: transparent;
+}
