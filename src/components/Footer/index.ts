@@ -1,1 +1,1 @@
-export {NavLinks} from "../../constants/NavLinks.constants";
+export {Footer} from "./Footer";

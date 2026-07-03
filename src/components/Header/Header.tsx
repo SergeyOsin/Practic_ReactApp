@@ -1,5 +1,6 @@
 import "./Header.css";
-import { Logo, NavLinks} from "./index.ts";
+import {NavLinks} from "../../constants";
+import {default as Logo} from "../../assets/Logo/Logo.svg";
 import {NavLink} from "react-router-dom";
 
 export const Header = () => {
