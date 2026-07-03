@@ -1,11 +1,11 @@
 import './Header.css';
-import LogoIcon from "../../assets/Logo.svg"
+import {Logo} from "./index.ts"
 const Header = () => {
     return (
         <>
             <header>
                 <a className="logo">
-                    <img src={LogoIcon}/>
+                    <img src={Logo}/>
                     <span>Cooks<br/>Delight</span>
                 </a>
 
