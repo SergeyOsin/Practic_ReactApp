@@ -2,7 +2,7 @@ import "./Footer.css";
 
 const Footer = () => {
     return (
-        <footer className="footer">
+        <footer>
             <nav className="Menu">
                 <a>HOME</a>
                 <a>RECIPES</a>
