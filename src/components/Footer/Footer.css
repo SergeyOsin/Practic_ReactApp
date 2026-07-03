@@ -1,13 +1,12 @@
-footer {
+.footer {
     background: #262522;
     border-radius: 32px;
     padding: 40px 24px;
     max-width: 1200px;
-    gap: 10px;
     margin: 20px auto;
 }
 
-.Menu {
+.footer__menu {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -15,27 +14,29 @@ footer {
     background-color: transparent;
 }
 
-.Menu a {
+.footer__link {
     text-decoration: none;
     font-family: Roboto, sans-serif;
     line-height: 100%;
-    background-color: transparent;
     letter-spacing: 0;
+    color: #7b7b7b;
+    background-color: transparent;
+    transition: color 0.3s;
 }
 
-.Menu a:hover {
+.footer__link:hover {
     cursor: pointer;
-    color: #F0EBE1;
+    color: #f0ebe1;
 }
 
-.line {
+.footer__line {
     width: 100%;
     height: 1px;
-    background: rgba(255,255,255,.08);
+    background: rgba(255, 255, 255, 0.08);
     margin-bottom: 18px;
 }
 
-.Copyright {
+.footer__copyright {
     text-align: center;
     font-family: Roboto, sans-serif;
     font-size: 12px;

@@ -1,23 +1,36 @@
-import './Header.css';
-import {Logo} from "./index.ts"
-const Header = () => {
-    return (
-        <>
-            <header>
-                <a className="logo">
-                    <img src={Logo}/>
-                    <span>Cooks<br/>Delight</span>
-                </a>
+import "./Header.css";
+import { Logo, NavLinks} from "../index";
+import {NavLink} from "react-router-dom";
 
-                <nav>
-                    <a className="active">HOME</a>
-                    <a>RECIPES</a>
-                    <a>COOKING TIPS</a>
-                    <a>ABOUT US</a>
-                </nav>
-            </header>
-        </>
+export const Header = () => {
+    return (
+        <header className="head">
+            <a className="head__logo">
+                <img
+                    className="head__logo-image"
+                    src={Logo}
+                    alt="Cooks Delight"
+                />
+                <span className="head__logo-text">
+                    Cooks <br /> Delight
+                </span>
+            </a>
+
+            <div className="head__nav">
+                {NavLinks.map((link) => (
+                    <NavLink
+                        to="/"
+                        key={link.id}
+                        className={`head__link ${
+                            link.title === "HOME"
+                                ? "head__link--active"
+                                : ""
+                        }`}
+                    >
+                        {link.title}
+                    </NavLink>
+                ))}
+            </div>
+        </header>
     );
 };
-
-export default Header;

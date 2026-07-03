@@ -1,5 +1,6 @@
-import Layout from './components/Layout/Layout.tsx'
+import {Layout} from './components'
 import './App.css'
+
 
 function App() {
 

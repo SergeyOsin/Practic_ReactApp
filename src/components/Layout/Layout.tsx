@@ -1,7 +1,7 @@
 import {type PropsWithChildren} from 'react';
 import {Header, Footer} from "./index.ts"
 
-const Layout=({ children }: PropsWithChildren)=>{
+export const Layout=({ children }: PropsWithChildren)=>{
     return(
             <div>
                 <Header/>
@@ -10,5 +10,3 @@ const Layout=({ children }: PropsWithChildren)=>{
             </div>
     );
 };
-
-export default Layout;
