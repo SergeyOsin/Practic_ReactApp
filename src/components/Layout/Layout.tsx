@@ -1,5 +1,5 @@
 import {type PropsWithChildren} from 'react';
-import {Header, Footer} from "./index.ts"
+import {Header, Footer} from "./index"
 
 export const Layout=({ children }: PropsWithChildren)=>{
     return(

@@ -1,5 +1,5 @@
 import "./Footer.css";
-import {NavLinks} from "../../constants/NavLinks.constants.ts";
+import {NavLinks} from "./index";
 
 export const Footer = () => {
     return (

@@ -1,5 +1,5 @@
 import "./Header.css";
-import { Logo, NavLinks} from "../index";
+import { Logo, NavLinks} from "./index.ts";
 import {NavLink} from "react-router-dom";
 
 export const Header = () => {
@@ -19,13 +19,13 @@ export const Header = () => {
             <div className="head__nav">
                 {NavLinks.map((link) => (
                     <NavLink
-                        to="/"
                         key={link.id}
-                        className={`head__link ${
-                            link.title === "HOME"
-                                ? "head__link--active"
-                                : ""
-                        }`}
+                        to={link.path}
+                        className={({ isActive}) =>
+                                isActive
+                                    ? "head__link head__link_active"
+                            : "head__link"
+                        }
                     >
                         {link.title}
                     </NavLink>
