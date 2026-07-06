@@ -1,1 +1,1 @@
-export {getRecipes} from "./Recipes.service";
+export {getAllRecipes} from "./Recipes.service";

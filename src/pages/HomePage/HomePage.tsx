@@ -7,7 +7,7 @@ import Soup from "../../assets/Image/Soup.svg";
 import Burger from "../../assets/Image/Burger.svg";
 import Cookies from "../../assets/Image/Cookies.svg";
 import Bread from "../../assets/Image/Bread.svg";
-import {getRecipes} from "../../services";
+import {getAllRecipes} from "../../services";
 
 const HeroSection = () => {
     return (
@@ -57,12 +57,13 @@ const RecipeSection = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        getRecipes()
+        getAllRecipes()
             .then((data) => setRecipes(data.recipes))
             .finally(() => setLoading(false));
     }, []);
-
     if (loading) return <Loader />;
+
+    const randNumb: number = Math.floor(Math.random()*(24-1+1));
     return (
         <section className="recipes-section">
             <div className="recipes-header">
@@ -77,7 +78,7 @@ const RecipeSection = () => {
             </div>
             <div className="recipes-list-container">
                 <div className="recipes-grid">
-                    {recipes.slice(4,10).map((recipe) => (
+                    {recipes.slice(randNumb,randNumb+6).map((recipe) => (
                         <RecipeCard
                             key={recipe.id}
                             image={recipe.image}
