@@ -22,7 +22,7 @@ export const RecipeCard = ({ image, name, prepTimeMinutes,
                         <span className="recipe-card__meta">
                             {totalTime > 59 ? Math.floor(totalTime/60) + " Hour": totalTime + " Min"} - {difficulty.toUpperCase()} PREP - {servings} SERVES
                         </span>
-                    <Button variant="unfilled">VIEW RECIPE</Button>
+                    <Button variant="empty">VIEW RECIPE</Button>
                 </div>
             </div>
         </div>

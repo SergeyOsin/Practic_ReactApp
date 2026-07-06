@@ -2,16 +2,16 @@ import clsx from "clsx";
 import "./Button.css";
 
 type TButtonProps = {
-    variant: "filled" | "unfilled";
+    variant: "filled" | "empty";
     children: React.ReactNode;
 };
 
 export const Button = ({variant, children,}: TButtonProps) => {
     return (
         <button
-            className={clsx("button", {
-                ButtonView: variant === "unfilled",
-                ButtonRecipes: variant === "filled", })}
+            className={clsx("buttonCustom", {
+                buttonEmpty: variant === "empty",
+                buttonFilled: variant === "filled", })}
         > {children} </button>
     );
 };

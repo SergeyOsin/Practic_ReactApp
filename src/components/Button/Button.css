@@ -1,34 +1,31 @@
-.ButtonView{
-    color: #262522;
-    font-family: Roboto,sans-serif;
+.buttonCustom {
+    font-family: Roboto, sans-serif;
     font-size: 14px;
     line-height: 100%;
     letter-spacing: 0;
     font-style: normal;
     border-radius: 24px;
-    padding: 12px 20px;
-    background: transparent;
 }
 
-.ButtonView:hover{
+.buttonEmpty {
+    color: #262522;
+    background: transparent;
+    padding: 12px 20px;
+}
+
+.buttonEmpty:hover {
     background-color: #262522;
     color: #F0EBE1;
 }
 
-.ButtonRecipes{
-    border: 1px #262522 solid;
+.buttonFilled {
+    border: 1px solid #262522;
     background-color: #F29C33;
-    font-family: Roboto,sans-serif;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0;
-    font-style: normal;
     padding: 12px 24px;
-    border-radius: 24px;
     z-index: 3;
 }
 
-.ButtonRecipes:hover{
+.buttonFilled:hover {
     background-color: #262522;
     color: #F29C33;
 }

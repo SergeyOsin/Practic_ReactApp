@@ -2,6 +2,6 @@ import "./Loader.css";
 
 export const Loader = () => {
     return (
-        <div className="load" />
+        <div className="load"/>
     );
 };

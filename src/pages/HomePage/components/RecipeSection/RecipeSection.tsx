@@ -1,35 +1,27 @@
-import {Tag, RecipeCard} from "../../../../components";
+import { Tag, RecipeCard } from "../../../../components";
 import "./RecipeSection.css";
-
-export type TRecipe = {
-    id: number;
-    image: string;
-    name: string;
-    prepTimeMinutes: number;
-    cookTimeMinutes: number;
-    difficulty: string;
-    servings: number;
-};
+import type { RecipeType } from "../../../../types";
 
 type TRecipeSectionProps = {
-    recipes: TRecipe[];
+    recipes: RecipeType[];
 };
 
-export const RecipeSection = ({ recipes }: TRecipeSectionProps ) => {
+export const RecipeSection = ({ recipes }: TRecipeSectionProps) => {
     return (
         <section className="recipes-section">
-            <div className="recipes-header">
+            <div className="recipes-section__header">
                 <Tag>RECIPES</Tag>
-                <h2 className="recipes-title">
+                <h2 className="recipes-section__title">
                     EMBARK ON A <br /> JOURNEY
                 </h2>
-                <p className="recipes-description">
+                <p className="recipes-section__description">
                     With our diverse collection of recipes we have something to
                     <br /> satisfy every palate.
                 </p>
             </div>
-            <div className="recipes-list-container">
-                <div className="recipes-grid">
+
+            <div className="recipes-section__list">
+                <div className="recipes-section__grid">
                     {recipes.map((recipe) => (
                         <RecipeCard
                             key={recipe.id}

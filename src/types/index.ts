@@ -1,0 +1,1 @@
+export type{RecipeType} from "./Recipe.type.ts";

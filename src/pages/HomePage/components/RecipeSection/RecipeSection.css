@@ -6,7 +6,7 @@
     background: transparent;
 }
 
-.recipes-header {
+.recipes-section__header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,18 +15,18 @@
     background: transparent;
 }
 
-.recipes-title {
+.recipes-section__title {
     font-family: Montserrat, sans-serif;
     font-size: 40px;
     font-weight: 700;
     color: #262522;
-    margin: 5px 0 16px 0;
+    margin: 5px 0 16px;
     letter-spacing: 1%;
     line-height: 100%;
     text-transform: uppercase;
 }
 
-.recipes-description {
+.recipes-section__description {
     font-family: Roboto, sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -35,14 +35,14 @@
     margin: 0;
 }
 
-.recipes-list-container {
+.recipes-section__list {
     margin-top: 60px;
     width: 100%;
     max-width: 1240px;
     background: transparent;
 }
 
-.recipes-grid {
+.recipes-section__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
