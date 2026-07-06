@@ -10,7 +10,7 @@ export const Filter = ({ icon, label}: FilterProps) => {
     return (
         <div className={clsx("filter", {})}>
             <div className="filter__icon">
-                <img src={icon} alt={label} />
+                <img src={icon}/>
             </div>
             <div className="filter__label">{label}</div>
         </div>

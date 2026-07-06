@@ -1,4 +1,5 @@
 <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+    <rect width="40" height="40" fill="#C4E5FC"/>
     <g clip-path="url(#clip0_1_207)">
         <mask id="mask0_1_207" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
             <path d="M0 0H40V40H0V0Z" fill="white"/>
@@ -12,7 +13,7 @@
     </g>
     <defs>
         <clipPath id="clip0_1_207">
-            <rect width="40" height="40" fill="white"/>
+            <rect width="40" height="40"/>
         </clipPath>
     </defs>
 </svg>

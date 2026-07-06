@@ -1,12 +1,13 @@
+import {useEffect, useState} from "react";
 import Kitchen from "../../assets/Image/MainPicture.png";
 import "./HomePage.css";
-import {Button, Filter, Tag, RecipeCard} from "../../components";
+import {Button, Filter, Tag, RecipeCard, Loader} from "../../components";
 import Buter from "../../assets/Image/Buter.svg";
 import Soup from "../../assets/Image/Soup.svg";
 import Burger from "../../assets/Image/Burger.svg";
 import Cookies from "../../assets/Image/Cookies.svg";
 import Bread from "../../assets/Image/Bread.svg";
-import {Recipes} from "../../constants";
+import {getRecipes} from "../../services";
 
 const HeroSection = () => {
     return (
@@ -27,7 +28,7 @@ const HeroSection = () => {
 };
 
 const ExploreSection = () => {
-        return (
+    return (
             <section className="palette-section">
                 <div className="palette-container">
                     <div className="palette-content">
@@ -52,6 +53,16 @@ const ExploreSection = () => {
 };
 
 const RecipeSection = () => {
+    const [recipes, setRecipes] = useState<any[]>([]);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        getRecipes()
+            .then((data) => setRecipes(data.recipes))
+            .finally(() => setLoading(false));
+    }, []);
+
+    if (loading) return <Loader />;
     return (
         <section className="recipes-section">
             <div className="recipes-header">
@@ -66,7 +77,7 @@ const RecipeSection = () => {
             </div>
             <div className="recipes-list-container">
                 <div className="recipes-grid">
-                    {Recipes.map((recipe) => (
+                    {recipes.slice(4,10).map((recipe) => (
                         <RecipeCard
                             key={recipe.id}
                             image={recipe.image}

@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #CCE7F8;
+    background: transparent;
 }
 
 .filter__label {
