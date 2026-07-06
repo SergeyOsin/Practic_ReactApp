@@ -1,9 +1,9 @@
 import { Tag, RecipeCard } from "../../../../components";
 import "./RecipeSection.css";
-import type { RecipeType } from "../../../../types";
+import type { TRecipe } from "../../../../types";
 
 type TRecipeSectionProps = {
-    recipes: RecipeType[];
+    recipes: TRecipe[];
 };
 
 export const RecipeSection = ({ recipes }: TRecipeSectionProps) => {

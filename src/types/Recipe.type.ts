@@ -1,4 +1,4 @@
-export type RecipeType = {
+export type TRecipe = {
     id: number;
     image: string;
     name: string;

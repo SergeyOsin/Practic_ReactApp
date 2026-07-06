@@ -8,11 +8,9 @@ export const ExploreSection = () => {
             <div className="palette-section__container">
                 <div className="palette-section__content">
                     <Tag>EXPLORE</Tag>
-
                     <h2 className="palette-section__title">
                         OUR DIVERSE PALETTE
                     </h2>
-
                     <p className="palette-section__description">
                         If you are a breakfast enthusiast, a connoisseur of savory
                         delights, or on the lookout for irresistible desserts, our
@@ -25,8 +23,7 @@ export const ExploreSection = () => {
                         <Filter
                             key={filter.label}
                             icon={filter.image}
-                            label={filter.label}
-                        />
+                            label={filter.label} />
                     ))}
                 </div>
             </div>

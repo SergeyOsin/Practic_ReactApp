@@ -1,1 +1,1 @@
-export type{RecipeType} from "./Recipe.type.ts";
+export type{TRecipe} from "./Recipe.type";
