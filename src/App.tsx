@@ -1,12 +1,14 @@
-import {Layout} from './components'
+import {HomePage} from "./pages";
+import {Layout} from "./components";
 import './App.css'
 
 
 function App() {
-
   return (
     <>
-      <Layout></Layout>
+        <Layout>
+            <HomePage />
+        </Layout>
     </>
   )
 }

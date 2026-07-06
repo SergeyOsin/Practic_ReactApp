@@ -1,0 +1,27 @@
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    padding: 12px 0;
+    border-bottom: 2px solid #D9D9D9;
+}
+
+.filter__icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #CCE7F8;
+}
+
+.filter__label {
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #262522;
+    letter-spacing: 2%;
+    line-height: 100%;
+    background: transparent;
+}
