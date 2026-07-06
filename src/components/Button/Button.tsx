@@ -1,17 +1,17 @@
 import clsx from "clsx";
 import "./Button.css";
 
-type ButtonProps = {
-    variant: "view" | "recipes";
+type TButtonProps = {
+    variant: "filled" | "unfilled";
     children: React.ReactNode;
 };
 
-export const Button = ({variant, children,}: ButtonProps) => {
+export const Button = ({variant, children,}: TButtonProps) => {
     return (
         <button
             className={clsx("button", {
-                ButtonView: variant === "view",
-                ButtonRecipes: variant === "recipes", })}
+                ButtonView: variant === "unfilled",
+                ButtonRecipes: variant === "filled", })}
         > {children} </button>
     );
 };
