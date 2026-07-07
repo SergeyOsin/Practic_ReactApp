@@ -1,6 +1,6 @@
 import { Tag, RecipeCard } from "../../../../components";
 import "./RecipeSection.css";
-import type { TRecipe } from "../../../../types";
+import type{ TRecipe } from "../../../../types";
 
 type TRecipeSectionProps = {
     recipes: TRecipe[];
@@ -22,7 +22,7 @@ export const RecipeSection = ({ recipes }: TRecipeSectionProps) => {
 
             <div className="recipes-section__list">
                 <div className="recipes-section__grid">
-                    {recipes.map((recipe) => (
+                    {recipes.slice(1,1).map((recipe) => (
                         <RecipeCard
                             key={recipe.id}
                             image={recipe.image}

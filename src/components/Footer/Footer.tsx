@@ -7,7 +7,8 @@ export const Footer = () => {
             <nav className="footer__menu">
                 {NavLinks.map((link) => (
                     <a key={link.id}
-                        className={`footer__link`}> {link.title}
+                        className={`footer__link`}
+                    > {link.title}
                     </a>
                 ))}
             </nav>

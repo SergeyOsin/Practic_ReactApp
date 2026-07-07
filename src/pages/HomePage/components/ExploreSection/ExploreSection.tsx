@@ -23,7 +23,8 @@ export const ExploreSection = () => {
                         <Filter
                             key={filter.label}
                             icon={filter.image}
-                            label={filter.label} />
+                            label={filter.label}
+                        />
                     ))}
                 </div>
             </div>
