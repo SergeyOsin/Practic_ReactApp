@@ -1,0 +1,1 @@
+export {getAllRecipes} from "./Recipes.service";

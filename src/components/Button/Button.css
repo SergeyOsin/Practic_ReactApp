@@ -1,0 +1,31 @@
+.buttonCustom {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0;
+    font-style: normal;
+    border-radius: 24px;
+}
+
+.buttonEmpty {
+    color: #262522;
+    background: transparent;
+    padding: 12px 20px;
+}
+
+.buttonEmpty:hover {
+    background-color: #262522;
+    color: #F0EBE1;
+}
+
+.buttonFilled {
+    border: 1px solid #262522;
+    background-color: #F29C33;
+    padding: 12px 24px;
+    z-index: 3;
+}
+
+.buttonFilled:hover {
+    background-color: #262522;
+    color: #F29C33;
+}
